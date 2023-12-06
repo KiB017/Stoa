@@ -1,0 +1,17 @@
+body 
+{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    background: #283739;
+}
+
+header
+{
+    background: #228896;
+    height: 8vh;
+    display: flex;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

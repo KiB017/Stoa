@@ -23,10 +23,13 @@ a
 header
 {
     background: #0077C0;
-    height: 10vh;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
 }
 
 .logo
@@ -35,7 +38,6 @@ header
     width: 60px;
     align-items: center;
     display: flex;
-
 }
 
 
@@ -49,7 +51,14 @@ nav a:hover
 {
     display: inline-block;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
     padding: 5px;
+}
+
+.menu_bars:hover
+{
+    background-color: #FAFAFA;
 }
 
 /*The bars for the lateral menu*/
@@ -114,4 +123,42 @@ nav a:hover
 {
     color: #C7EEFF;
     margin: 14px;
+}
+
+.wrapper .sidebar ul li a
+{
+    display: block;
+    padding: 12px 30px;
+    border-bottom: 1px solid #0077C0;
+    color: #FAFAFA;
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .sidebar_icon
+{
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover
+{
+    color: #283739;
+    background-color: #FAFAFA;
+}
+
+.wrapper .sidebar ul li a:hover::before
+{
+    display: block;
+}
+
+body.active .wrapper .sidebar
+{
+    left: -225px;
+}
+
+header.active
+{
+	margin-left: 0px;
+	width: 100%; 
 }

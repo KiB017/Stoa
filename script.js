@@ -1,4 +1,5 @@
 const menubarsBtn = document.querySelector('.menu_bars');
+const cardsContainer = document.querySelector('.cards_container');
 
 
 menubarsBtn.addEventListener("click", displaySideMenu);
@@ -21,5 +22,17 @@ const produrctInfo = [];
 produrctInfo.push({
     name: 'Product',
     price: 5,
-    image: 'images\no-image.jpg'
+    image: 'images/no-image.jpg'
 });
+
+function productsRender(x)
+{
+    for(product of x)
+    {
+        const productCard = document.createElement('div');
+        productCard.classList.add('product_card');
+
+        const productImg = document.createElement('img');
+        productImg.setAttribute('src', product.image);
+    }
+}

@@ -1,5 +1,6 @@
 const menubarsBtn = document.querySelector('.menu_bars');
 
+
 menubarsBtn.addEventListener("click", displaySideMenu);
 
 function transformacionX(x)
@@ -15,3 +16,10 @@ function displaySideMenu()
     header.classList.toggle("active");
     body.classList.toggle("active");
 }
+
+const produrctInfo = [];
+produrctInfo.push({
+    name: 'Product',
+    price: 5,
+    image: 'images\no-image.jpg'
+});

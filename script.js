@@ -16,10 +16,11 @@ function displaySideMenu()
 
     header.classList.toggle("active");
     body.classList.toggle("active");
+    cardsContainer.classList.toggle("active");
 }
 
-const produrctInfo = [];
-produrctInfo.push({
+const productInfo = [];
+productInfo.push({
     name: 'Product',
     price: 5,
     image: 'images/no-image.jpg'
@@ -34,5 +35,34 @@ function productsRender(x)
 
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
+
+        const productDetails = document.createElement('div');
+        productDetails.classList.add('product_details');
+
+        const productDetailsDiv = document.createElement('div');
+        
+        const productPrice = document.createElement('p');
+        productPrice.innerText = '$' + product.price;
+        const productName = document.createElement('p');
+        productName.innerText = product.name;
+
+        productDetailsDiv.appendChild(productPrice);
+        productDetailsDiv.appendChild(productName);
+
+        const productDetailsFigure = document.createElement('figure');
+        const productImgCart = document.createElement('img');
+        productImgCart.setAttribute('src', 'images/add-product-figure.svg');
+
+        productDetailsFigure.appendChild(productImgCart);
+
+        productDetails.appendChild(productDetailsDiv);
+        productDetails.appendChild(productDetailsFigure);
+
+        productCard.appendChild(productImg);
+        productCard.appendChild(productDetails);
+
+        cardsContainer.appendChild(productCard);
     }
 }
+
+productsRender(productInfo);

@@ -176,6 +176,8 @@ header.active
 .product_card
 {
     width: 240px;
+    background: #283739;
+    margin: 5px;
 }
 
 .product_card img
@@ -223,22 +225,22 @@ header.active
 
 @media (max-width: 640px) 
 {
-    .product-detail 
+    .product_detail 
     {
       width: 100%;
     }
 
-    .cards-container 
+    .cards_container 
     {
         grid-template-columns: repeat(auto-fill, 140px);
     }
 
-    .product-card 
+    .product_card 
     {
         width: 140px;
     }
     
-    .product-card img 
+    .product_card img 
     {
         width: 140px;
         height: 140px;

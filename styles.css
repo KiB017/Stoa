@@ -233,10 +233,10 @@ header.active
 	width: 100%; 
 }
 
-section.actvie
+section.active
 {
     margin-left: 0px;
-	width: 100%; 
+    width: 100%;
 }
 
 @media (max-width: 640px) 

@@ -13,16 +13,29 @@ function displaySideMenu()
 {
     const body = document.querySelector('body');
     const header = document.querySelector('header');
+    const section = document.querySelector('section');
 
     header.classList.toggle("active");
     body.classList.toggle("active");
-    cardsContainer.classList.toggle("active");
+    section.classList.toggle("active");
 }
 
 const productInfo = [];
 productInfo.push({
     name: 'Product',
     price: 5,
+    image: 'images/no-image.jpg'
+});
+
+productInfo.push({
+    name: 'Product 1',
+    price: 10,
+    image: 'images/no-image.jpg'
+});
+
+productInfo.push({
+    name: 'Product 3',
+    price: 100,
     image: 'images/no-image.jpg'
 });
 

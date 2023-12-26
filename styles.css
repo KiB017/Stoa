@@ -152,18 +152,14 @@ nav a:hover
     display: block;
 }
 
-body.active .wrapper .sidebar
-{
-    left: -225px;
-}
-
-header.active
-{
-	margin-left: 0px;
-	width: 100%; 
-}
-
 /*Products section*/
+section
+{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
 .cards_contariner
 {
     display: grid;
@@ -178,6 +174,7 @@ header.active
     width: 240px;
     background: #283739;
     margin: 5px;
+    border-radius: 20px;
 }
 
 .product_card img
@@ -194,6 +191,7 @@ header.active
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
+    padding: 0px 12px 14px 12px;
 }
 
 .product_details figure
@@ -221,6 +219,24 @@ header.active
     margin-top: 0;
     margin-bottom: 0;
     color: #C7EEFF;
+}
+
+/*slide animation*/
+body.active .wrapper .sidebar
+{
+    left: -225px;
+}
+
+header.active
+{
+	margin-left: 0px;
+	width: 100%; 
+}
+
+section.actvie
+{
+    margin-left: 0px;
+	width: 100%; 
 }
 
 @media (max-width: 640px) 

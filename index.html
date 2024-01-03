@@ -10,6 +10,7 @@
     </head>
 
     <body class="active">
+        <!--HEADER-->
         <header class="active">
             <a href="#" class="logo">
                 <div class="menu_bars" onclick="transformacionX(this)">
@@ -21,28 +22,74 @@
             </a>
 
             <nav>
-                <a href="#" class="nav-link">
+                <a href="#" class="nav_link">
                     <span class="material-symbols-outlined">
                         notifications
                     </span>
                 </a>
-                <a href="#" class="nav-link">
+                <a href="#" class="nav_link">
                     <span class="material-symbols-outlined">
                         add_box
                     </span>
                 </a>
-                <a href="#" class="nav-link">
+                <a href="#" class="nav_link">
                     <span class="material-symbols-outlined">
                         settings
+                    </span>
+                </a>
+                <a href="#" class="shopping_bag_order">
+                    <span class="material-symbols-outlined sidebar_icon">
+                        shopping_bag
                     </span>
                 </a>
             </nav>
         </header>
 
-        <section class="active">
-            <div class="cards_container"></div>
-        </section>
+        <!--Aside of an order list-->
+        <aside id="shopping_bag_container">
+            <div class="title_container">
+                <img src="images/no-image.jpg" alt="no image">
+                <p class="title">My order</p>
+            </div>
 
+            <div class="my_order_content">
+                <div class="shopping_bag">
+                    <figure>
+                        <img src="images/no-image.jpg" alt="No image">
+                    </figure>
+                    <p>Something</p>
+                    <p>$30.00</p>
+                    <img src="icons/close-btn.svg" alt="">
+                </div>
+
+                <div class="shopping_bag">
+                    <figure>
+                        <img src="images/no-image.jpg" alt="No image">
+                    </figure>
+                    <p>Something</p>
+                    <p>$30.00</p>
+                    <img src="icons/close-btn.svg" alt="">
+                </div>
+
+                <div class="shopping_bag">
+                    <figure>
+                        <img src="images/no-image.jpg" alt="No image">
+                    </figure>
+                    <p>Something</p>
+                    <p>$30.00</p>
+                    <img src="icons/close-btn.svg" alt="">
+                </div>
+
+                <div class="order">
+                    <p>
+                        <span>Total</span>
+                    </p>
+                    <p>$560.00</p>
+                </div>
+            </div>
+        </aside>
+
+        <!--A wrapper for sidemenu-->
         <div class="wrapper">
             <div class="sidebar">
                 <div class="profile">
@@ -88,21 +135,8 @@
             </div>
         </div>
 
-        <section class="main_container">
-            <div class="cards_container">
-                <!--<div class="product-card">
-                    <img src="images/no-image.jpg" alt="">
-                    <div class="product-info">
-                    <div>
-                        <p>$120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <figure>
-                        <img src="images/add-product-figure.svg" alt="">
-                    </figure>
-                    </div>
-                </div>-->
-            </div>
+        <section class="active">
+            <div class="cards_container"></div>
         </section>
 
         <script src="script.js"></script>

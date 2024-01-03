@@ -8,9 +8,17 @@
     font-family: sans-serif;
 }
 
+:root
+{
+    --black: #1D242B;
+    --secondary-black: #283739;
+    --white: #FAFAFA;
+    --blue: #0077C0;
+}
+
 body 
 {
-    background: #1D242B;
+    background: var(--black);
 }
 
 a
@@ -66,7 +74,7 @@ nav a:hover
 {
     width: 35px;
     height: 5px;
-    background-color: #1D242B;
+    background-color: var(--black);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -86,6 +94,112 @@ nav a:hover
     transform: translate(0, -11px) rotate(45deg);
 }
 
+aside
+{
+    background-color: var(--secondary-black);
+    color: #FAFAFA;
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+}
+
+/*Shopping bag container*/
+#shopping_bag_container
+{
+    padding: 0 24px;
+}
+.title_container
+{
+    display: flex;
+}
+.title_container img
+{
+    transform: rotate(180deg);
+    margin: 14px;
+}
+.title
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.order
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: #FAFAFA;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.order p:nth-child(1)
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.order p span:nth-child(1)
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.order p:nth-child(2)
+{
+    text-align: end;
+    font-weight: bold;
+}
+
+.shopping_bag
+{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.shopping_bag figure
+{
+    margin: 0;
+}
+
+.shopping_bag figure img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.shopping_bag p:nth-child(2)
+{
+    color: var(--white);
+}
+
+.shopping_bag p:nth-child(3)
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.primary_button
+{
+    background-color: var(--blue);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+}
+
+/*Side menu*/
 .wrapper .sidebar
 {
     background: #283739;
@@ -164,7 +278,7 @@ section
 {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
-    gap: 25px;
+    gap: 5px;
     place-content: center;
     margin-top: 20px;
 }
@@ -173,7 +287,7 @@ section
 {
     width: 240px;
     background: #283739;
-    margin: 5px;
+    margin: 10px;
     border-radius: 20px;
 }
 
@@ -208,7 +322,7 @@ section
 .product_details div p:nth-child(1)
 {
     font-weight: bold;
-    font-size: var(--md);
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 4px;
 }

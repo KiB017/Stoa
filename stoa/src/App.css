@@ -1,0 +1,51 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+:root
+{
+  --black: #1D242B;
+  --secondary-black: #283739;
+  --white: #FAFAFA;
+  --blue: #0077C0;
+}
+
+html, body
+{
+  background: var(--black);
+  font-family: sans-serif;
+}
+
+header
+{
+  background: var(--blue);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo
+{
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  align-items: center;
+  display: flex;
+}
+
+.boxes-container
+{
+  width: 100%;
+  display: flex;
+}
+
+.add-bill-btn-container
+{
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}

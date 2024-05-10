@@ -1,0 +1,11 @@
+.btn-add-box-container
+{
+  font-size: 45px;
+  margin-right: 5px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.box-card
+{
+    width: 240px;
+    background: #0077C0;
+    margin: 10px;
+    border-radius: 20px;
+    border: 3px solid #FAFAFA;
+}
+
+.box-image
+{
+    width: 240px;
+    height: 240px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.box-details
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding: 0px 12px 14px 12px;
+}
+
+.box-details figure
+{
+    margin: 0px;
+}
+
+.box-plus-sign
+{
+    height: 35px;
+    width: 35px;
+}
+
+.product_details div p:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product_details div p:nth-child(2)
+{
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0;
+}

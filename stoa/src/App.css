@@ -39,7 +39,7 @@ header
 
 .boxes-container
 {
-  width: 100%;
+  width: auto;
   display: flex;
 }
 

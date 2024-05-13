@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Stoa/static/css/main.0e9f35bd.css",
+    "main.js": "/Stoa/static/js/main.956a17ce.js",
+    "index.html": "/Stoa/index.html",
+    "main.0e9f35bd.css.map": "/Stoa/static/css/main.0e9f35bd.css.map",
+    "main.956a17ce.js.map": "/Stoa/static/js/main.956a17ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e9f35bd.css",
+    "static/js/main.956a17ce.js"
+  ]
+}
